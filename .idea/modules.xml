@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/myrpc2-api/myrpc2-api.iml" filepath="$PROJECT_DIR$/myrpc2-api/myrpc2-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myrpc2-consumer/myrpc2-consumer.iml" filepath="$PROJECT_DIR$/myrpc2-consumer/myrpc2-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myrpc2-provider/myrpc2-provider.iml" filepath="$PROJECT_DIR$/myrpc2-provider/myrpc2-provider.iml" />
+    </modules>
+  </component>
+</project>
