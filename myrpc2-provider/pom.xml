@@ -26,6 +26,12 @@
 
     <dependencies>
 
+        <!--依赖于simpleRPC模块来注册服务，提供服务-->
+        <dependency>
+            <groupId>github.veikkoroc</groupId>
+            <artifactId>myrpc2-simple</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
 
         <!--public api-->
         <dependency>

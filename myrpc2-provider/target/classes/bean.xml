@@ -4,5 +4,6 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="helloWorldImpl" class="github.veikkoroc.impl.HelloWorldImpl"></bean>
+    <bean id="serviceRegisterImpl" class="github.veikkoroc.registry.impl.ServiceRegisterImpl"></bean>
 
 </beans>
