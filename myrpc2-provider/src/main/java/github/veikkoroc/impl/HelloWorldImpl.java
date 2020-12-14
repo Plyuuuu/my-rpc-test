@@ -10,6 +10,7 @@ import github.veikkoroc.api.HelloWorld;
  * @date 2020/12/13 12:08
  */
 public class HelloWorldImpl implements HelloWorld {
+    @Override
     public String sayHello(String msg) {
         System.out.println("github/veikkoroc/impl/HelloWorldImpl.java sayHello method excuse [msg:"+msg+"]");
         return "Hello ~~~";
