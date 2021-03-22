@@ -13,6 +13,6 @@ public class HelloWorldImpl implements HelloWorld {
     @Override
     public String sayHello(String msg) {
         System.out.println("github/veikkoroc/impl/HelloWorldImpl.java sayHello method excuse [msg:"+msg+"]");
-        return "Hello ~~~";
+        return "Provider say : Hello ~~~";
     }
 }
