@@ -10,6 +10,7 @@
 
     <build>
         <plugins>
+
             <!--防止maven修改语言版本-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -20,6 +21,27 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
+
         </plugins>
     </build>
+    <dependencies>
+
+
+        <!--依赖api-->
+        <dependency>
+            <groupId>github.veikkoroc</groupId>
+            <artifactId>myrpc2-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <!--依赖rpc-simple模块-->
+        <dependency>
+            <groupId>github.veikkoroc</groupId>
+            <artifactId>myrpc2-simple</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+
+
+    </dependencies>
 </project>
