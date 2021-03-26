@@ -9,6 +9,7 @@ import java.net.InetAddress;
  * @version 1.0
  * @date 2020/12/14 9:56
  */
+@Deprecated
 public class RegistryUtil {
     /**
      * 获取服务类的接口的规范化名称
@@ -72,7 +73,7 @@ public class RegistryUtil {
         System.out.println("IP:["+IP+"]");
 
         // 设置需要发布服务的路径
-        String servicePath = Constant.ROOT_PATH+allFields+"/"+IP+":"+Constant.PORT;
+        String servicePath = MyRpc2Constant.ROOT_PATH+allFields+"/"+IP+":"+ MyRpc2Constant.PORT;
         System.out.println(servicePath);
 
         return servicePath;

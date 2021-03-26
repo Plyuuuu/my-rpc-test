@@ -1,5 +1,6 @@
 import github.veikkoroc.impl.HelloWorldImpl;
 import github.veikkoroc.registry.impl.ServiceRegisterImpl;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
@@ -14,6 +15,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * @version 1.0
  * @date 2020/12/13 12:15
  */
+@Slf4j
 public class Application {
     /**
      * 全局的 ioc 容器
@@ -28,7 +30,7 @@ public class Application {
 
         // 手动获取需要注册到注册中心的类
         HelloWorldImpl helloWorldImpl = ioc.getBean("helloWorldImpl", HelloWorldImpl.class);
-        System.out.println("获得将要注册到注册中心的对象["+helloWorldImpl+"]");
+        log.info("---->需要注册到注册中心的对象:[{}]",helloWorldImpl);
 
         // 把该类注册到注册中心和本地缓存
         ServiceRegisterImpl serviceRegisterImpl = ioc.getBean("serviceRegisterImpl", ServiceRegisterImpl.class);

@@ -1,11 +1,13 @@
 package github.veikkoroc.utils;
 
 /**
+ * 项目中的常量
+ *
  * @author Veikko Roc
  * @version 1.0
  * @date 2020/12/13 16:47
  */
-public class Constant {
+public class MyRpc2Constant {
     /**
      * ZK服务的套接字
      */

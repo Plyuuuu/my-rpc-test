@@ -1,6 +1,6 @@
 package github.veikkoroc.zk;
 
-import github.veikkoroc.utils.Constant;
+import github.veikkoroc.utils.MyRpc2Constant;
 import org.I0Itec.zkclient.ZkClient;
 import org.junit.Test;
 
@@ -13,7 +13,7 @@ import java.util.List;
  */
 public class ZkClientTest {
     public static void main(String[] args) {
-        ZkClient zkClient = new ZkClient(Constant.ZK_SERVICE_STRING);
+        ZkClient zkClient = new ZkClient(MyRpc2Constant.ZK_SERVICE_STRING);
 
         // String java = zkClient.create("/Books1", "C++", CreateMode.PERSISTENT);
         // System.out.println(java);
@@ -22,17 +22,17 @@ public class ZkClientTest {
         zkClient.close();
     }
     /**
-     * 修改节点数据 writeData
+     * 修改节点数据 writeData ,会出现乱码
      * 查看节点数据 readData
      */
     @Test
     public void test01(){
-        ZkClient zkClient = new ZkClient(Constant.ZK_SERVICE_STRING);
-        Object o = zkClient.readData("/Books");
-        System.out.println(o.toString());
+        ZkClient zkClient = new ZkClient(MyRpc2Constant.ZK_SERVICE_STRING);
+        // Object o = zkClient.readData("/Books");
+        // System.out.println(o.toString());
 
-        zkClient.writeData("/Books","BigData");
-        Object o1 = zkClient.readData("/Books");
+        zkClient.writeData("/p1/p2","大数据");
+        Object o1 = zkClient.readData("/p1/p2");
         System.out.println(o1.toString());
         zkClient.close();
     }
@@ -69,7 +69,7 @@ public class ZkClientTest {
         ZkClient zkClient = new ZkClient("127.0.0.1:2181");
         // boolean delete = zkClient.delete("/test");
 
-        boolean b = zkClient.deleteRecursive("/Books1");
+        boolean b = zkClient.deleteRecursive("/p1/p2");
         System.out.println("是否删除成功？"+b);
         zkClient.close();
     }
