@@ -23,5 +23,11 @@ public class MyRpc2Constant {
      */
     public static final int PORT = 7000;
 
+    /**
+     * Curator 重试策略 : 重试之间的等待时间 2 s,最大重试次数为 3 次
+     */
+    public static final int BASE_SLEEP_TIME = 2000;
+    public static final int MAX_RETRIES = 3;
+
 
 }
