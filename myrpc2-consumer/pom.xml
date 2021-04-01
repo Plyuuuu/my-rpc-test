@@ -37,7 +37,7 @@
         <!--依赖rpc-simple模块-->
         <dependency>
             <groupId>github.veikkoroc</groupId>
-            <artifactId>myrpc2-simple</artifactId>
+            <artifactId>myrpc2-framework-consumer</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 

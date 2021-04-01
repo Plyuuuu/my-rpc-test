@@ -29,7 +29,7 @@
         <!--依赖于simpleRPC模块来注册服务，提供服务-->
         <dependency>
             <groupId>github.veikkoroc</groupId>
-            <artifactId>myrpc2-simple</artifactId>
+            <artifactId>myrpc2-framework-provider</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 

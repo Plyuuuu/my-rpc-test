@@ -1,7 +1,8 @@
 package github.veikkoroc;
 
-import github.veikkoroc.api.HelloWorld;
-import github.veikkoroc.proxy.RpcProxy;
+
+import github.veikkoroc.api.Animal;
+import github.veikkoroc.proxy.ServiceProxy;
 
 /**
  * 调用远程方法
@@ -18,14 +19,17 @@ public class Application {
     public static void main(String[] args) {
 
         // 获取代理对象
-        RpcProxy rpcProxy = new RpcProxy();
-        HelloWorld helloWorld = rpcProxy.getProxyInstance(HelloWorld.class);
+        ServiceProxy serviceProxy = new ServiceProxy();
+        Animal animal = serviceProxy.getInstance(Animal.class);
 
         // 执行代理对象的方法
-        String s = helloWorld.sayHello("Hello yea~");
-
-        // 处理结果
-        System.out.println(s);
+        if (animal == null){
+            System.err.println("抱歉,未找到服务:["+ Animal.class.toString() +"]");
+        }else {
+            String eat = animal.eat();
+            // 处理结果
+            System.out.println("eat:"+eat);
+        }
 
     }
 

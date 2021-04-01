@@ -3,7 +3,10 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="helloWorldImpl" class="github.veikkoroc.impl.HelloWorldImpl"></bean>
+    <bean id="dog" class="github.veikkoroc.impl.Dog">
+        <property name="name" value="二哈"/>
+        <property name="age" value="5"/>
+    </bean>
     <bean id="serviceRegisterImpl" class="github.veikkoroc.registry.impl.ServiceRegisterImpl"></bean>
 
 </beans>
